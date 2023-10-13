@@ -9,7 +9,7 @@ using SistemaGestionEntities;
 
 namespace SistemaGestionData
 {
-    internal class ProductoVendidoData
+    public class ProductoVendidoData
     {
         public static List<ProductoVendido> ObtenerProductoVendido(int IdProductoVendido)
         {
@@ -132,7 +132,7 @@ namespace SistemaGestionData
             }
             return lista;
         }
-        public static List<ProductoVendido> EiminarProductoVendido(ProductoVendido ProductoVendido)
+        public static List<ProductoVendido> EliminarProductoVendido(ProductoVendido ProductoVendido)
         {
             List<ProductoVendido> lista = new List<ProductoVendido>();
             string connectionstring = @"Server=DESKTOP-PURSVAM;DataBase=gestion;trusted_connection=true";

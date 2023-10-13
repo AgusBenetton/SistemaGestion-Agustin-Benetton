@@ -10,7 +10,7 @@ using SistemaGestionEntities;
 
 namespace SistemaGestionData
 {
-    internal class ProductoData
+    public class ProductoData
     {
 
 

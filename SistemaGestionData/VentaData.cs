@@ -13,7 +13,7 @@ using SistemaGestionEntities;
 
 namespace SistemaGestionData
 {
-    internal class VentaData
+    public class VentaData
     {
         public static List<Venta> ObtenerVenta(int IdVenta)
         {
