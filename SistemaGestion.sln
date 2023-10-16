@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionData", "Siste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionBussiness", "SistemaGestionBussiness\SistemaGestionBussiness.csproj", "{8A7F05B5-A8CF-4C0C-96DF-2D05F26F61C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionUI", "SistemaGestionUI\SistemaGestionUI.csproj", "{43FBF836-BA46-4142-8118-79537963D4EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGestionUI", "SistemaGestionUI\SistemaGestionUI.csproj", "{43FBF836-BA46-4142-8118-79537963D4EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGestionWebAPI", "SistemaGestionWebAPI\SistemaGestionWebAPI.csproj", "{4E2487A4-F8CD-4C05-B4FB-5EB77A0FD4DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{43FBF836-BA46-4142-8118-79537963D4EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43FBF836-BA46-4142-8118-79537963D4EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43FBF836-BA46-4142-8118-79537963D4EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2487A4-F8CD-4C05-B4FB-5EB77A0FD4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2487A4-F8CD-4C05-B4FB-5EB77A0FD4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2487A4-F8CD-4C05-B4FB-5EB77A0FD4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2487A4-F8CD-4C05-B4FB-5EB77A0FD4DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

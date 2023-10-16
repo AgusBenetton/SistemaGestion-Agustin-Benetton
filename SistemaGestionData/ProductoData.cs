@@ -151,7 +151,7 @@ namespace SistemaGestionData
 
 
 
-        public static List<Producto> EliminarProducto(Producto Producto)
+        public static List<Producto> EliminarProducto(int Id )
         {
             List<Producto> lista = new List<Producto>();
             string connectionstring = @"Server=DESKTOP-PURSVAM;DataBase=gestion;trusted_connection=true";
@@ -162,7 +162,7 @@ namespace SistemaGestionData
                 connection.Open();
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.Add(new SqlParameter("ID", SqlDbType.VarChar) { Value = Producto.Id });
+                    command.Parameters.Add(new SqlParameter("ID", SqlDbType.VarChar) { Value = Id });
                 }
                 connection.Close();
             }

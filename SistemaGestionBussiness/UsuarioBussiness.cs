@@ -19,12 +19,12 @@ namespace SistemaGestionBussiness
         {
             return UsuarioData.CrearUsuario();
         }
-        public static List<Usuario> ModificarUsuario()
+        public static List<Usuario> ModificarUsuario(Usuario usuario)
         {
             return UsuarioData.ModificarUsuario();
 
         }
-        public static List <Usuario> EliminarUsuario() 
+        public static List <Usuario> EliminarUsuario(int id) 
         {
             return UsuarioData.EliminarUsuario();
         }

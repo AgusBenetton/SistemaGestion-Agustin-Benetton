@@ -14,15 +14,15 @@ namespace SistemaGestionBussiness
         {
             return ProductoData.ListarProducto();
         }
-        public static List<Producto> CrearProducto()
+        public static List<Producto> CrearProducto(Producto producto)
         {
             return ProductoData.CrearProducto();
         }
-        public static List<Producto> ModificarProducto()
+        public static List<Producto> ModificarProducto(Producto producto)
         {
             return ProductoData.ModificarProducto();
         }
-        public static List<Producto> EliminarProducto()
+        public static List<Producto> EliminarProducto(int id)
         {
             return ProductoData.EliminarProducto();
         }

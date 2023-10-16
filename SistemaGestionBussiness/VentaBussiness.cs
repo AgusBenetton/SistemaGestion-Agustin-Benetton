@@ -19,7 +19,7 @@ namespace SistemaGestionBussiness
         {
             return VentaData.ListarVenta();
         }
-        public static List<Venta> CrearVenta()
+        public static List<Venta> CrearVenta(Venta venta)
         {
             return VentaData.CrearVenta();
         }
