@@ -20,5 +20,11 @@ namespace SistemaGestionWebAPI.Controllers
         {
             VentaBussiness.CrearVenta(Venta);
         }
+
+        [HttpDelete(Name = "EliminarVenta")]
+        public void Delete([FromBody] int Id)
+        {
+            VentaBussiness.EliminarVenta(Id);
+        }
     }
 }

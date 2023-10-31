@@ -146,6 +146,20 @@ namespace SistemaGestionData
             }
             return lista;
         }
-        
+
+        public static List<Venta> EliminarVenta()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<Venta> ModificarVenta()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<Venta> CrearVenta()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

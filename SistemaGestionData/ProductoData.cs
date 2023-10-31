@@ -168,5 +168,20 @@ namespace SistemaGestionData
             }
             return lista;
         }
+
+        public static List<Producto> CrearProducto()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<Producto> ModificarProducto()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<Producto> EliminarProducto()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

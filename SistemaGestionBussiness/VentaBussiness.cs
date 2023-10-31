@@ -27,7 +27,7 @@ namespace SistemaGestionBussiness
         {
             return VentaData.ModificarVenta();
         }
-        public static List<Venta> EliminarVenta()
+        public static List<Venta> EliminarVenta(int id)
         {
             return VentaData.EliminarVenta();
         }

@@ -9,7 +9,7 @@ namespace SistemaGestionWebAPI.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        [HttpGet(Name = "ObtenerUsusario")]
+        [HttpGet(Name = "ObtenerUsuario")]
         public IEnumerable<Usuario> Get()
         {
             return UsuarioBussiness.ObtenerUsuarios().ToArray();
@@ -20,5 +20,18 @@ namespace SistemaGestionWebAPI.Controllers
         {
            UsuarioBussiness.ModificarUsuario(Usuario);
         }
+
+        [HttpDelete(Name = "EliminarUsuario")]
+        public void Delete([FromBody] int Id)
+        {
+            UsuarioBussiness.EliminarUsuario(Id);
+        }
+
+        [HttpPost(Name = "CrearUsuario")]
+        public void Post([FromBody] Usuario Usuario)
+        {
+            UsuarioBussiness.CrearUsuario(Usuario);
+        }
+
     }
 }

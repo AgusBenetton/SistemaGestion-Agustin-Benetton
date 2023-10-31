@@ -55,6 +55,45 @@ namespace SistemaGestionData
             return lista;
         }
 
+        public static List<UsuarioName> ObtenerNombre(int IdUsuario)
+        {
+            List<UsuarioName> lista = new List<UsuarioName>();
+            string connectionstring = @"Server=DESKTOP-PURSVAM;DataBase=gestion;trusted_connection=true";
+
+            string query = "SELECT Name FROM Usuario";
+
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    var parametro = new SqlParameter();
+                    parametro.ParameterName = "Id";
+                    parametro.SqlDbType = SqlDbType.Int;
+                    parametro.Value = IdUsuario;
+
+                    command.Parameters.Add(parametro);
+
+                    using (SqlDataReader dr = command.ExecuteReader())
+                    {
+                        if (dr.HasRows)
+                        {
+                            while (dr.Read())
+                            {
+                                var usuario = new UsuarioName();
+                                usuario.Id = Convert.ToInt32(dr["ID"]);
+                                usuario.Name = Convert.ToString(dr["Name"]);
+                                usuario.Apellido = Convert.ToString(dr["Apellido"]);
+                                lista.Add(usuario);
+
+                            }
+                        }
+                    }
+                }
+
+            }
+            return lista;
+        }
 
 
         public static List<Usuario> ListarUsuario()
@@ -164,6 +203,21 @@ namespace SistemaGestionData
                 connection.Close();
             }
             return lista;
+        }
+
+        public static List<Usuario> CrearUsuario()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<Usuario> ModificarUsuario()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<Usuario> EliminarUsuario()
+        {
+            throw new NotImplementedException();
         }
     }
 }

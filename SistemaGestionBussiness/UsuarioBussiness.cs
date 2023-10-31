@@ -1,5 +1,6 @@
 ﻿using SistemaGestionData;
 using SistemaGestionEntities;
+using System.Net.NetworkInformation;
 
 namespace SistemaGestionBussiness
 {
@@ -15,7 +16,7 @@ namespace SistemaGestionBussiness
             return UsuarioData.ListarUsuario();
         }
 
-        public static List<Usuario> CrearUsuario()
+        public static List<Usuario> CrearUsuario(Usuario usuario)
         {
             return UsuarioData.CrearUsuario();
         }
@@ -28,6 +29,34 @@ namespace SistemaGestionBussiness
         {
             return UsuarioData.EliminarUsuario();
         }
+
+        public static List<Usuario> Login (string NombreUsuario, string Contrasena)
+        {
+            var login = SistemaGestionData.UsuarioData.ListarUsuario();
+            bool control = false;
+            if (login != null)
+            {
+                foreach (var item in login)
+                {
+                    if (item.Contrasena == Contrasena && item.NombreUsuario == NombreUsuario) 
+                    {
+                    control = true;
+                        break;
+                    }
+
+                }
+                if (control)
+                {
+                    return login;  
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            return login;
+        }
+       
     }
 
 }

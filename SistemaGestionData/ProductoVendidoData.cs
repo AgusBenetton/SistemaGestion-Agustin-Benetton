@@ -149,5 +149,20 @@ namespace SistemaGestionData
             }
             return lista;
         }
+
+        public static List<ProductoVendido> CrearProductoVendido()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<ProductoVendido> ModificarProductoVendido()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static List<ProductoVendido> EliminarProductoVendido()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
